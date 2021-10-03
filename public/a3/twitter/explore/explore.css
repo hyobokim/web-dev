@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.wd-background-size {
+    width: 60%;
+}
+
 .wd-rounded-sides {
     border-radius: 10px;
 }
