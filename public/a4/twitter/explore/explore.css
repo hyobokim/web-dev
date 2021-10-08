@@ -1,0 +1,83 @@
+.wd-background-color {
+    background-color: black;
+}
+
+.wd-background-size {
+    width: 60%;
+}
+
+.wd-rounded-sides {
+    border-radius: 10px;
+}
+
+.wd-for-you-color {
+    color: rgb(29, 161, 242);
+}
+
+.wd-search-hyperlinks-color {
+    color: rgb(110, 118, 125);
+}
+
+.wd-search-bar {
+    background-color: darkgray;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-reset {
+    clear: both;
+}
+
+.wd-for-you {
+    color: rgb(29, 161, 242);
+    font-size: 15px;
+    background-color: black;
+    padding: 16px;
+}
+
+.wd-search-bar-hyperlinks {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    background-color: black;
+    padding: 16px;
+}
+
+.wd-gray-text-font {
+    color: rgb(110, 118, 125);
+}
+
+.wd-text-size {
+    font-size: 13px;
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-tweet-text-size {
+    font-size: 15px;
+}
+
+.wd-bottom-margin {
+    margin-bottom: 20px;
+}
+
+.wd-profile-icon {
+    border-radius: 10px;
+}
+
+.wd-right-margin {
+    margin-right: 10px;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-tweet-image-right-margin {
+    margin-right: 16px;
+}
