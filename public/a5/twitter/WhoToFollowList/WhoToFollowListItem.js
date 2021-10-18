@@ -13,11 +13,18 @@ const ListItem = (who) => {
             <div class="col">
             <img src=${who.avatarIcon} height="40px" width="40px" class="wd-profile">
 </div>
-<div class="col">
+<div class="col float-left">
+<div class="row">
 ${who.userName};
 </div>
-<div class="col">
+<div class="row">
 @${who.handle};
+</div>
+</div>
+<div class="col float-right">
+<div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
 </div>
 </div>
 </a>
