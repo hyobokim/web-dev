@@ -93,7 +93,7 @@ const NavigationSidebar = (
           </a>
 
 
-          <a className="list-group-item" href="#">
+          <a className="list-group-item" href="#/">
             <div className="row">
               <div className="col-2">
                 <i className="fas fa-info-circle"></i>

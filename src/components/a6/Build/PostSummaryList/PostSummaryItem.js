@@ -32,7 +32,7 @@ const SummaryItem = (
               <p className="wd-white-text wd-tweet-text-size wd-float-reset">{post.title}</p>
             </div>
             <div className="col">
-              <img src={post.image} width="100px" height="100px"
+              <img src={post.image} alt="Represents the post" width="100px" height="100px"
                    className="wd-tweet-image-right-margin wd-float-right wd-rounded-sides"/>
             </div>
             <div className="wd-float-reset wd-bottom-margin"></div>

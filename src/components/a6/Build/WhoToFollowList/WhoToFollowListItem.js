@@ -17,10 +17,10 @@ const ListItem = (
 
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
                 data-auto-replace-svg="nest"></script>
-        <a className="list-group-item">
+        <a href="#/" className="list-group-item">
           <div className="row">
             <div className="col">
-              <img src={who.avatarIcon} height="40px" width="40px"
+              <img src={who.avatarIcon} alt="Profile of the given avatar" height="40px" width="40px"
                    className="wd-profile"/>
             </div>
             <div className="col float-left">

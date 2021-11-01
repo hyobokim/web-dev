@@ -7,7 +7,7 @@ const WhoToFollowList = () => {
       <>
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
                 data-auto-replace-svg="nest"></script>
-        <a className="list-group d-none d-lg-block">
+        <a href="#/" className="list-group d-none d-lg-block">
           {
             who.map(who => {
               return(
