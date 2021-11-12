@@ -6,10 +6,10 @@ const HelloWorld = () => {
   return (
       <>
         <h1>Hello World!</h1>
-        <Link to="/a6/practice">
+        <Link to="/a7/practice">
           Practice
         </Link> |
-        <Link to="/a6/build">
+        <Link to="/a7/build">
           Build
         </Link>
         <History/>

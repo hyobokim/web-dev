@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore</title>
+
+  <script src="https://kit.fontawesome.com/f6ebac0d6a.js" crossorigin="anonymous"></script>
+
+  <link href="explore.css" rel="stylesheet"/>
+  <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+</head>
+<body class="wd-background-color wd-background-size">
+
+<div class="row">
+  <div class="col-2">
+    <ul class="nav flex-column">
+      <!-- Home button -->
+      <li class="nav-item">
+        <a class="nav-link" href="../home.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Home
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Explore button -->
+      <li class="nav-item">
+        <a class="nav-link" href="../explore.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Explore
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Notifications -->
+      <li class="nav-item">
+        <a class="nav-link" href="../notifications.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Notifications
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Notifications -->
+      <li class="nav-item">
+        <a class="nav-link" href="../notifications.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Explore
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Messages -->
+      <li class="nav-item">
+        <a class="nav-link" href="../messages.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Messages
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Bookmarks -->
+      <li class="nav-item">
+        <a class="nav-link" href="../bookmarks.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-bookmark"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Bookmarks
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Lists -->
+      <li class="nav-item">
+        <a class="nav-link" href="../lists.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Lists
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Profile -->
+      <li class="nav-item">
+        <a class="nav-link" href="../profile.html">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-user-alt"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              Profile
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- More -->
+      <li class="nav-item mb-2">
+        <a class="nav-link" href="#">
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+              More
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <a href="../tweet.html">
+      <div class="wd-tweet-button wd-rounded-sides">Tweet</div>
+    </a>
+
+  </div>
+
+  <div class="col-7">
+<!--    &lt;!&ndash; Displaying search bar and hyperlink buttons&ndash;&gt;-->
+<!--    <form id="search-bar" class="wd-float-left pt-1">-->
+<!--      <input id="search" class="wd-rounded-sides wd-search-bar" width="100%" placeholder="Search Twitter">-->
+<!--    </form>-->
+
+<!--    <div class="wd-float-left pt-1">-->
+<!--      <a href="explore-settings.html">-->
+<!--        <i class="fas fa-cog wd-gray-text-font"></i>-->
+<!--      </a>-->
+<!--    </div>-->
+
+    <div class="row">
+      <div class="col-9">
+        <form id="search-bar" class="wd-float-left pt-1 mt-1 mb-1">
+          <input id="search" class="wd-rounded-sides wd-search-bar" width="100%" placeholder="Search Twitter">
+        </form>
+      </div>
+      <div class="col-3">
+        <a href="explore-settings.html">
+          <i class="fas fa-cog wd-gray-text-font"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="wd-float-reset"></div>
+
+    <ui class="nav nav-pills pb-2 mb-1">
+      <li class="nav-item">
+        <a class="nav-link active" href="for-you.html">For You</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trending.html">Trending</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sports.html">Sports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="entertainment.html">Entertainment</a>
+      </li>
+    </ui>
+
+    <div class="wd-float-reset"></div>
+
+    <!-- Trending Tweets -->
+    <div class="wd-gray-text-font wd-text-size">Trending in America</div>
+    <div class="wd-white-text wd-tweet-text-size">Squid Game</div>
+    <div class="wd-gray-text-font wd-text-size wd-bottom-margin">10.2K Tweets</div>
+
+    <div class="wd-gray-text-font wd-text-size">Sports - Trending</div>
+    <div class="wd-white-text wd-tweet-text-size">NEU vs Bentley</div>
+    <div class="wd-gray-text-font wd-text-size wd-bottom-margin">220 Tweets</div>
+
+    <!-- Tweets with authors -->
+    <div class="wd-float-left">
+      <img src="../../../images/nytimes.jpg" width="15px" height="15px" class="wd-rounded-sides wd-float-left "\>
+      <div class="wd-float-left wd-text-size wd-white-text wd-right-margin">New York Times</div>
+      <i class="fas fa-check-circle wd-float-left wd-white-text wd-right-margin"></i>
+      <div class="wd-float-left wd-text-size wd-gray-text-font">Yesterday</div>
+      <p class="wd-white-text wd-tweet-text-size wd-float-reset">COVID cases at an all-time low. NJ State Governors considering lifting mask mandate</p>
+    </div>
+    <img src="../../../images/mask.jpg" width="100px" height="100px" class="wd-float-right wd-tweet-image-right-margin wd-rounded-sides"\>
+    <div class="wd-float-reset wd-bottom-margin"></div>
+
+    <div class="wd-float-left">
+      <img src="../../../images/northeastern.jpg" width="15px" height="15px" class="wd-rounded-sides wd-float-left "\>
+      <div class="wd-float-left wd-text-size wd-white-text wd-right-margin">Northeastern University</div>
+      <i class="fas fa-check-circle wd-float-left wd-white-text wd-right-margin"></i>
+      <div class="wd-float-left wd-text-size wd-gray-text-font">2 Hours Ago</div>
+      <p class="wd-white-text wd-tweet-text-size wd-float-reset">Northeastern Hockey team wins against Bentley in a landslide 4-0 victory</p>
+    </div>
+    <img src="../../../images/nuhockey.jpg" width="100px" height="100px" class="wd-float-right wd-tweet-image-right-margin wd-rounded-sides"\>
+    <div class="wd-float-reset wd-bottom-margin"></div>
+
+    <!-- Tweets with no authors but pictures-->
+    <div class="wd-float-left">
+      <div class="wd-float-left wd-text-size wd-gray-text-font wd-right-margin">Gaming</div>
+      <div class="wd-float-left wd-text-size wd-gray-text-font wd-right-margin">2 Days Ago</div>
+      <p class="wd-white-text wd-tweet-text-size wd-float-reset">Top teams to look out for leading into League of Legends Worlds 2021 in Iceland</p>
+    </div>
+    <img src="../../../images/worlds.jpg" width="100px" height="100px" class="wd-float-right wd-tweet-image-right-margin wd-rounded-sides"\>
+    <div class="wd-float-reset wd-bottom-margin"></div>
+
+    <div class="wd-float-left">
+      <div class="wd-float-left wd-text-size wd-gray-text-font wd-right-margin">COVID-19</div>
+      <div class="wd-float-left wd-text-size wd-gray-text-font wd-right-margin">LIVE</div>
+      <p class="wd-white-text wd-tweet-text-size wd-float-reset">Live COVID-19 updates for Boston, Massachusetts</p>
+    </div>
+    <img src="../../../images/covid.jpg" width="100px" height="100px" class="wd-float-right wd-tweet-image-right-margin wd-rounded-sides"\>
+    <div class="wd-float-reset wd-bottom-margin"></div>
+  </div>
+
+
+  <div class="col-3 follow-border d-none d-lg-block" >
+    <div class="row">
+      <h6 class="text-white mt-2">Who to follow</h6>
+    </div>
+    <div class="row">
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../images/facebook.jpg" width="40px" height="40px" class="wd-profile mb-3" />
+        </div>
+        <div class="col-7">
+          <div class="text-white wd-text-size">
+            Facebook <i class="far fa-check-circle"></i>
+          </div>
+          <div class="text-white wd-text-size">
+            @Facebook
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../images/amazon.jpg" width="40px" height="40px" class="wd-profile mb-3" />
+        </div>
+        <div class="col-7">
+          <div class="text-white wd-text-size position-relative">
+            Amazon <i class="far fa-check-circle"></i>
+          </div>
+          <div class="text-white wd-text-size">
+            @Amazon
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../images/apple.jpg" width="40px" height="40px" class="wd-profile mb-3" />
+        </div>
+        <div class="col-7">
+          <div class="text-white wd-text-size">
+            Apple <i class="far fa-check-circle"></i>
+          </div>
+          <div class="text-white wd-text-size">
+            @Apple
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../images/netflix.jpg" width="40px" height="40px" class="wd-profile mb-3" />
+        </div>
+        <div class="col-7">
+          <div class="text-white wd-text-size">
+            Netflix <i class="far fa-check-circle"></i>
+          </div>
+          <div class="text-white wd-text-size">
+            @Netflix
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../images/google.jpg" width="40px" height="40px" class="wd-profile mb-3" />
+        </div>
+        <div class="col-7">
+          <div class="text-white wd-text-size">
+            Google <i class="far fa-check-circle"></i>
+          </div>
+          <div class="text-white wd-text-size">
+            @Google
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="wd-follow-button wd-rounded-sides">
+            Follow
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
