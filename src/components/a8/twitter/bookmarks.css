@@ -1,0 +1,126 @@
+.wd-background-color {
+    background-color: black;
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-title-font-size {
+    font-size: 20px;
+}
+
+.wd-text-font-size {
+    font-size: 13px;
+}
+
+.wd-gray-text {
+    color: lightgray;
+}
+
+.wd-title-left-margin {
+    margin-left: 16px;
+}
+
+.wd-handle-bottom-margin {
+    margin-bottom: 12px;
+}
+
+.wd-title-border {
+    border-width: 1px;
+    width: 50%;
+    border-color: gray;
+    border-style: solid;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-reset {
+    clear: both;
+}
+
+.wd-widget-right-margin {
+    margin-right: 10px;
+}
+
+.wd-profile-top-margin {
+    margin-top: 12px;
+}
+
+.wd-profile-left-margin {
+    margin-left: 16px;
+}
+
+.wd-profile-picture-round {
+    border-radius: 24px;
+}
+
+.wd-handle-left-margin {
+    margin-left: 12px;
+}
+
+.wd-small-left-margin {
+    margin-left: 8px;
+}
+
+.wd-handle-text-size {
+    font-size: 15px;
+}
+
+.wd-tweet-width {
+    width: 506px;
+}
+
+.wd-float-top {
+    float: top;
+}
+
+.wd-tweet-right-margin {
+    margin-right: 16px;
+}
+
+.wd-article-top-corners-rounded {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.wd-article-left-margin {
+    margin-left: 24px;
+}
+
+.wd-text-bottom-rounded-corner {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.wd-text-padding {
+    padding: 12px;
+}
+
+.wd-article-text-width {
+    width: 490px;
+}
+
+.wd-icon-right-margin {
+    margin-right: 12px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+/*Since the size of the article is 50% of screen width, a quarter of that is roughly 15%*/
+.wd-grid-col-quarter {
+    width: 15%;
+    float: left;
+}
+
+.wd-article-bottom-margin {
+    margin-bottom: 40px;
+}

@@ -1,6 +1,7 @@
 import posts from '../data/tweets.json'
 
 const tweets = (state = posts, action) => {
+
   switch (action.type) {
     case 'create-tweet':
       const tweet = {
@@ -10,7 +11,7 @@ const tweets = (state = posts, action) => {
         "verified": false,
         "handle": "ReactJS",
         "time": "2h",
-        ...action,
+        ...action.tweet,
         "avatar-image": "../../../images/react-blue.png",
         "logo-image": "../../../images/react-blue.png",
         "stats": {
@@ -42,6 +43,11 @@ const tweets = (state = posts, action) => {
           return tweet;
         }
       });
+    case 'fetch-all-tweets':
+      return({
+        tweets: action.tweets
+      })
+      break;
     default:
       return(state);
   }
