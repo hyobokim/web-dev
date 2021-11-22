@@ -24,4 +24,4 @@ app.get('/hello', (req, res) => { // use express library to listen for URL patte
 require('./services/movies-service')(app);
 require('./services/tweeter-service')(app);
 
-app.listen(4000);     // listen to port 4000
+app.listen(process.env.PORT || 4000);     // listen to port 4000

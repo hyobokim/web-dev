@@ -1,4 +1,4 @@
-const TWEET_API = 'http://localhost:4000/api/tweets';
+const TWEET_API = 'https://web-dev-2021.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) => // function to fetch tweets and notify reducer
     fetch(TWEET_API)  // asynchronously sends HTTP get request to URL

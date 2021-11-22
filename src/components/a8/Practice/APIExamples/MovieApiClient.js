@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 const MovieApiClient = () => {
   const [movies, setMovies] = useState([]);
   useEffect(() =>
-          fetch('http://localhost:4000/api/movies') // retrieve data from "api/movies"
+          fetch('https://web-dev-2021.herokuapp.com/api/movies') // retrieve data from "api/movies"
           .then(response => response.json())  // parse into json object
           .then(movies => setMovies(movies))  // set movies value to be the json object
       , []);    // don't force re-render because state changed
@@ -12,7 +12,7 @@ const MovieApiClient = () => {
       setMovie({...movie, title: event.target.value});    // update title
   const createMovieClickHandler = () =>
       // handle create movie click event
-      fetch('http://localhost:4000/api/movies', {   // use HTTP post
+      fetch('https://web-dev-2021.herokuapp.com/api/movies', {   // use HTTP post
         method: 'POST',     // embed movie in message body as string
         body: JSON.stringify(movie),    // tell server string is formatted
         headers: {    // as JSON
@@ -24,7 +24,7 @@ const MovieApiClient = () => {
 
 
   const deleteMovie = (movie) =>    // handle delete button mouse click
-      fetch(`http://localhost:4000/api/movies/${movie._id}`, {  // fetch movies from API on server
+      fetch(`https://web-dev-2021.herokuapp.com/api/movies/${movie._id}`, {  // fetch movies from API on server
         method: 'DELETE'  // use delete HTTP method
       })
       .then(response => response.json())  // parse JSON response from server
@@ -32,16 +32,13 @@ const MovieApiClient = () => {
 
 
   const saveMovie = () =>
-      fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+      fetch(`https://web-dev-2021.herokuapp.com/api/movies/${movie._id}`, {
         method: 'PUT',
         body: JSON.stringify(movie),
         headers: {
           'content-type': 'application/json'
         }
       })
-      .then(response => response.json())
-      .then(movies => setMovies(movies));
-
 
 
   return(
