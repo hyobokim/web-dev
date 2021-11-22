@@ -47,7 +47,6 @@ const tweets = (state = posts, action) => {
       return({
         tweets: action.tweets
       })
-      break;
     default:
       return(state);
   }

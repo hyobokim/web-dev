@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React from "react";
 import TweetListItem from "./TweetListItem.js";
-import {useDispatch, useSelector} from "react-redux";
-import {fetchAllTweets} from "../../../../services/twitterService";
+import {useSelector} from "react-redux";
+// import {fetchAllTweets} from "../../../../services/twitterService";
 
 const selectAllTweets = (state) => state.tweets;  // get tweets from the state in the store
 
@@ -9,7 +9,7 @@ const selectAllTweets = (state) => state.tweets;  // get tweets from the state i
 const TweetList = () => {
 
   const tweets = useSelector(selectAllTweets);
-  const dispatch = useDispatch();     // get dispatch from hook
+  // const dispatch = useDispatch();     // get dispatch from hook
   // useEffect(() => fetchAllTweets(dispatch), []);  // on load call fetch all tweets
 
   return(
