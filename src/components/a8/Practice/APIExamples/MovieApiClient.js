@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'development') {
   MOVIE_API = 'http://localhost:4000/api/movies';
 }
 else {
-  MOVIE_API = 'https://web-dev-2021.herokuapp.com/api/movies';
+  MOVIE_API = 'https://web-dev-2021.herokuapp.com';
 }
 
 const MovieApiClient = () => {
