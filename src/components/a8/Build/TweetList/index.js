@@ -9,7 +9,7 @@ const selectAllTweets = (state) => state.tweets;  // get tweets from the state i
 const TweetList = () => {
 
   const tweets = useSelector(selectAllTweets);
-  const dispatch = useDispatch();     // get dispatch from hook
+  // const dispatch = useDispatch();     // get dispatch from hook
   useEffect(() => fetchAllTweets, []);  // on load call fetch all tweets
 
   return(
