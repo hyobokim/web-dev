@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'development') {
   TWEET_API = 'http://localhost:4000/api/tweets';
 }
 else {
-  TWEET_API = 'https://web-dev-2021.herokuapp.com';
+  TWEET_API = 'https://web-dev-node-backend.herokuapp.com';
 }
 
 export const fetchAllTweets = (dispatch) => // function to fetch tweets and notify reducer
