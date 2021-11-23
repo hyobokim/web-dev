@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import TweetListItem from "./TweetListItem.js";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {fetchAllTweets} from "../../../../services/twitterService";
 
 const selectAllTweets = (state) => state.tweets;  // get tweets from the state in the store
