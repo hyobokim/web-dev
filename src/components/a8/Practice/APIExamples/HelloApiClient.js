@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 
-const HELLO_API = 'https://web-dev-2021.herokuapp.com';
-//
-// if (process.env.NODE_ENV === 'development') {
-//   HELLO_API = 'http://localhost:4000/hello';
-// }
-// else {
-//   HELLO_API = 'https://web-dev-2021.herokuapp.com/';
-// }
+let HELLO_API;
+
+if (process.env.NODE_ENV === 'development') {
+  HELLO_API = 'http://localhost:4000/hello';
+}
+else {
+  HELLO_API = 'https://web-dev-2021.herokuapp.com/';
+}
 
 const HelloApiClient = () => {
   const [hello, setHello] = useState('');

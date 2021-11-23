@@ -40,6 +40,6 @@ const SummaryItem = (
         </div>
       </>
   )
-      ;
+
 }
 export default SummaryItem;

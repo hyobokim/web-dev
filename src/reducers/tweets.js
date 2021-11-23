@@ -28,6 +28,11 @@ const tweets = (state = posts, action) => {
       );
     case 'delete-tweet':
       return state.filter(tweet => tweet._id !== action.tweet._id);
+
+    case 'fetch-all-tweets':
+      return({
+        tweets: action.tweets
+      })
     case 'like-tweet':
       return state.map(tweet => {
         if(tweet._id === action.tweet._id) {
@@ -43,10 +48,6 @@ const tweets = (state = posts, action) => {
           return tweet;
         }
       });
-    case 'fetch-all-tweets':
-      return({
-        tweets: action.tweets
-      })
     default:
       return(state);
   }

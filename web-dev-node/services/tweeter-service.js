@@ -2,9 +2,15 @@ let tweets = require('../../src/data/tweets.json');
 
 module.exports = (app) => {
 
-  const postNewTweet = (req, res) => {
-    const newTweet = {    // handle HTTP POST event
-      _id: (new Date()).getTime() + '', // initialize new tweet instance
+  const findAllTweets = (req, res) => {
+    res.json(tweets);
+  }
+
+  app.get('/api/tweets', findAllTweets);
+
+  const createTweet = (req, res) => {
+    const newTweet = {
+      _id: (new Date()).getTime() + '',
       "topic": "Web Development",
       "userName": "ReactJS",
       "verified": false,
@@ -17,23 +23,17 @@ module.exports = (app) => {
         "retweets": 234,
         "likes": 345
       },
-      ...req.body,    // include/override with tweet posted by client
+      ...req.body,
     }
+    newTweet['_id'] = (new Date()).getTime();
     tweets = [
       newTweet,
-      ...tweets     // append new tweet to beginning of tweets
+      ...tweets
     ];
-    res.json(newTweet);     // send new array back to client
+    res.json(newTweet);
   }
 
-  app.post('/api/tweets', postNewTweet); // listen for HTTP POST and notify handler
-
-
-  const findAllTweets = (req, res) => {
-    res.json(tweets);
-  }
-
-  app.get('/api/tweets', findAllTweets);
+  app.post('/api/tweets', createTweet); // listen for HTTP POST and notify handler
 
 
   const deleteTweet = (req, res) => {
