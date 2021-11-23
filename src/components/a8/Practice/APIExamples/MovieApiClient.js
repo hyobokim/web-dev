@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from "react";
 
-let MOVIE_API;
+// let MOVIE_API;
+const MOVIE_API = 'https://web-dev-node-backend.herokuapp.com/api/movies'
 
-if (process.env.NODE_ENV === 'development') {
-  MOVIE_API = 'http://localhost:4000/api/movies';
-} else {
-  MOVIE_API = 'https://web-dev-node-backend.herokuapp.com/';
-}
+// if (process.env.NODE_ENV === 'development') {
+//   MOVIE_API = 'http://localhost:4000/api/movies';
+// } else {
+//   MOVIE_API = 'https://web-dev-node-backend.herokuapp.com/api/movies';
+// }
 
 const MovieApiClient = () => {
   const [movies, setMovies] = useState([]);

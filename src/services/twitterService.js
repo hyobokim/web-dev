@@ -1,12 +1,13 @@
 
 
-let TWEET_API;
-if (process.env.NODE_ENV === 'development') {
-  TWEET_API = 'http://localhost:4000/api/tweets';
-}
-else {
-  TWEET_API = 'https://web-dev-node-backend.herokuapp.com';
-}
+const TWEET_API = 'https://web-dev-node-backend.herokuapp.com/api/tweets'
+// let TWEET_API;
+// if (process.env.NODE_ENV === 'development') {
+//   TWEET_API = 'http://localhost:4000/api/tweets';
+// }
+// else {
+//   TWEET_API = 'https://web-dev-node-backend.herokuapp.com/';
+// }
 
 export const fetchAllTweets = (dispatch) => // function to fetch tweets and notify reducer
     fetch(TWEET_API)  // asynchronously sends HTTP get request to URL
