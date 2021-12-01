@@ -2,7 +2,9 @@ import './App.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a8/Practice";
 import Build from "./components/a8/Build/index.js";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Link, Route} from "react-router-dom";
+import A9 from "../src/a9";
+import A9Build from "../src/a9/Build";
 
 function App() {
   return (
@@ -23,7 +25,11 @@ function App() {
     //   </header>
     // </div>
 <BrowserRouter>
+
   <div className="container">
+    <Link to="/a8/practice">A8</Link> |
+    <Link to="/a9/practice">A9</Link>
+
     <Route path="/a6/hello" exact={true}>
       <HelloWorld/>
     </Route>
@@ -32,6 +38,12 @@ function App() {
     </Route>
     <Route path="/a8/build" exact={true}>
       <Build/>
+    </Route>
+    <Route path="/a9/">
+      <A9/>
+    </Route>
+    <Route path="/a9/build" exact={true}>
+      <A9Build/>
     </Route>
   </div>
 </BrowserRouter>

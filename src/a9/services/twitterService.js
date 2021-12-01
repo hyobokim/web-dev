@@ -1,8 +1,6 @@
 
 
-// const TWEET_API = 'https://web-dev-node-backend.herokuapp.com/api/tweets'
-
-const TWEET_API = 'http://localhost:4000/api/tweets';
+const TWEET_API = 'http://localhost:4000/api/tweets'
 // let TWEET_API;
 // if (process.env.NODE_ENV === 'development') {
 //   TWEET_API = 'http://localhost:4000/api/tweets';
