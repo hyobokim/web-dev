@@ -19,7 +19,8 @@ export const fetchAllTweets = (dispatch) => // function to fetch tweets and noti
         })
     );
 
-export const postNewTweet = (dispatch, newTweet) =>
+export const postNewTweet = (dispatch, newTweet) =>  {
+  console.log(newTweet);
     fetch(TWEET_API, {
       method: 'POST',
       body: JSON.stringify(newTweet),
@@ -34,6 +35,7 @@ export const postNewTweet = (dispatch, newTweet) =>
           tweet
         })
     );
+}
 
 
 export const deleteTweet = (dispatch, tweet) =>

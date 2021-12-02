@@ -1,6 +1,9 @@
+import posts from '../../data/tweets.json'
 
+// const posts = fetch("localhost:4000/api/tweets").then(result => result.json());
+// console.log(posts);
 
-const tweets = (state, action) => {
+const tweets = (state=posts , action) => {
 
   switch (action.type) {
     case 'create-tweet':
@@ -30,9 +33,8 @@ const tweets = (state, action) => {
       return state.filter(tweet => tweet._id !== action.tweet._id);
 
     case 'fetch-all-tweets':
-      return({
-        tweets: action.tweets
-      })
+      console.log(action);
+      return action.tweets;
     case 'like-tweet':
       return state.map(tweet => {
         if(tweet._id === action.tweet._id) {

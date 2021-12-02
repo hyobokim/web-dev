@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import "../ExploreScreen/explore.css"
 import {useDispatch} from "react-redux";
-import {postNewTweet} from "../../../services/twitterService";
+import {postNewTweet} from "../../services/twitterService";
 
 const WhatsHappening = () => {
   const [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-  const tweetClickHandler = () => {
+  const tweetClickHandler = () =>
     // dispatch({type: 'create-tweet', tweet: whatsHappening});
-    postNewTweet(dispatch, {tweet: whatsHappening})
-  };
+    postNewTweet(dispatch, {tweet: whatsHappening});
 
   return(
       <div className="container">

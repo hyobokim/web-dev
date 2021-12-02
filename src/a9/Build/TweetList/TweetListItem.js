@@ -1,19 +1,19 @@
 import React from "react";
 import './tweet.css';
 import {useDispatch} from "react-redux";
-import {deleteTweet, likeTweet} from "../../../services/twitterService";
+import {deleteTweet, likeTweet} from "../../services/twitterService";
 
 const TweetListItem = ({tweet}) => {
   const dispatch = useDispatch();
-  const deleteTweetClickHandler = () => {
+  const deleteTweetClickHandler = () =>
     // dispatch({type: 'delete-tweet', tweet})
     deleteTweet(dispatch, tweet);
-  };
+  ;
 
-  const likeClickHandler = () => {
+  const likeClickHandler = () =>
     // dispatch({type: 'like-tweet', tweet});
     likeTweet(dispatch, tweet);
-  };
+  ;
 
   return(
       <li className="list-group-item">

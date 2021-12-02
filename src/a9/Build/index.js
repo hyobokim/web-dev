@@ -6,7 +6,7 @@ import {
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen";
 import who from "../../reducers/who"
-import tweets from "../../reducers/tweets";
+import tweets from "../../a9/reducers/tweets";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
