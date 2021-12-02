@@ -13,7 +13,7 @@ const TweetListItem = ({tweet}) => {
   const likeClickHandler = () =>
     // dispatch({type: 'like-tweet', tweet});
     likeTweet(dispatch, tweet);
-  ;
+
 
   return(
       <li className="list-group-item">
