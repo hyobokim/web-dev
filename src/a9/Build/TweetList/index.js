@@ -10,22 +10,9 @@ const TweetList = () => {
 
   const tweets = useSelector(selectAllTweets);
   const dispatch = useDispatch();     // get dispatch from hook
-  // useEffect(() => fetchAllTweets, []);  // on load call fetch all tweets
-
-
-  // useEffect(() => {
-  //   // console.log(fetchAllTweets(dispatch));
-  //   // fetchAllTweets(dispatch).then(r => console.log(r.tweets));
-  //   fetch("http://localhost:4000/api/tweets")
-  //   .then(res => {
-  //     return res.json()
-  //   }).then((data) => console.log(data));
-  //   // console.log(tweets);
-  // }, [])
 
   useEffect(() => {
-    fetchAllTweets(dispatch);
-  }, []);
+    fetchAllTweets(dispatch)}, [dispatch]);
 
   // useEffect(() => {
   //   fetchAllTweets(dispatch).then(r => console.log(r));

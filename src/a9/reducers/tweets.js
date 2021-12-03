@@ -26,15 +26,14 @@ const tweets = (state=posts , action) => {
 
       return ([
             tweet,
-            ...state,
+              ...state
           ]
       );
     case 'delete-tweet':
       return state.filter(tweet => tweet._id !== action.tweet._id);
 
     case 'fetch-all-tweets':
-      console.log(action);
-      return action.tweets;
+      return action.tweets.reverse();
     case 'like-tweet':
       return state.map(tweet => {
         if(tweet._id === action.tweet._id) {
